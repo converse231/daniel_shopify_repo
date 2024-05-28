@@ -1,4 +1,5 @@
 {% assign main_menu_linklist = linklists[section.settings.menu].links %}
+Hello world
 
 <div x-data="{ mobileMenuOpen: false }" class="relative bg-white">
   <div class="mx-auto px-4 sm:px-6">
@@ -16,7 +17,7 @@
       
 
         <!-- NAVIGATION MENU --> 
-      <nav x-data="{ open: false }" class="hidden md:flex space-x-10">
+      <nav x-data="{ open: false }" class="hidden md:flex space-x-10"> 
         {% for link in main_menu_linklist %}
           {% if link.links != blank %}
             <div class="relative">
